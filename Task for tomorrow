@@ -1,0 +1,16 @@
+from sklearn.preprocessing import LabelEncoder 
+
+label_encoder = LabelEncoder() 
+
+df['Level Of Development'] = label_encoder.fit_transform(df['Level Of Development'])
+
+df['Level Of Development'] = label_encoder.fit_transform(df['Level Of Development'])
+
+
+df = pd.get_dummies(df, columns = ['EU membership'], drop_first = True)
+
+import pandas as pd 
+
+x = data[['Amount', 'If the buyer is a bank', 'Export', 'Export to OECD', 'If the seller belong to IT industry', 'If the outcome is a patent', 'If the outcome is a know how', 'If the outcome with no IP', 'Knowstyle', 'If the project is a RandD mission', 'If the project is a technical consulation', 'If the project is a IP exchange', 'Classification of the contract', 'money', 'paystyle']]
+y = data['Asset Specificity']
+
